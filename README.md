@@ -1,14 +1,14 @@
 # Table of Contents
-- [Setup](#Setup)  
-  - [OSX](##OSX)  
-  - [Windows](##Windows)  
-  - [Linux](##Linux)  
-- [Syllabus](#Syllabus)  
-  - [Classes 1 and 2](##Classes 1 and 2)
-  - [Classes 3 and 4](##Classes 3 and 4)
-- [Etherpad](#Etherpad)  
-- [Links](#Links)  
-- [Thanks](#Thanks)  
+- [Setup](#setup)  
+  - [OSX](#osx)  
+  - [Windows](#windows)  
+  - [Linux](#linux)  
+- [Syllabus](#syllabus)  
+  - [Classes 1 and 2](#classes-1-and-2-march-5th-and-6th)  
+  - [Classes 3 and 4](#classes-3-and-4-march-12th-and-13th)  
+- [Etherpad](#etherpad)  
+- [Links](#links)  
+- [Thanks](#thanks)  
 
 ***  
 # Setup
