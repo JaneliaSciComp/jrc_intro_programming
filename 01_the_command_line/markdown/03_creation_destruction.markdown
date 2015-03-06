@@ -1,7 +1,7 @@
 ## Creation and Destruction
 1. Let's all get back to the same point in the hierarchy before moving on.
   - `$ cd`
-  - `$ cd <>`
+  - `$ cd jrc_intro_programming/01_the_command_line`
 2. To make a new directory, use the `mkdir` command.
   - `mkdir manuscript`
   - `ls -F manuscript`

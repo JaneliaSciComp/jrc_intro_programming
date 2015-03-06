@@ -26,15 +26,15 @@
 7. **Important Detour:** to find out which flags are available, you can use a few options:  
     1. the `--help` flag on many commands prints basic usage information
     2. the command `man`, passing the program name as the argument.  For instance, `man ls`.  This opens the _manual_ page for this program, with detailed usage information.
-    3. `man` is not available in Git Bash, but you can also type "man <parameter>" into Google and view the man pages there.
+    3. `man` is not available in Git Bash, but you can also type "man <command>" into Google and view the man pages there.
 8. Detour: `man` pages open in something called a _pager_.  Pagers are used to display output that won't fit in one screen.  <UP>, <DOWN>, and <SPACE> will move around within the document.  You can search by typing a forward slash followed by the search term and step through the search results using `n`.  **You can exit a pager by hitting `q`.**
 9. Detour: File extensions are short suffixes to filenames that can give us a hint about what is inside of the file.  For instance, `.txt` files contain text, `.jpg` files are JPEG images, and `.py` files are python scripts.
 10. Can we get directory listings for other directories?
   - Pass the absolute or relative path to the directory as an argument to `ls`.
   - `$ ls /`
-  - `$ ls <>`
+  - `$ ls jrc_intro_programming`
 11. How do we change directories?
-  - `$ cd <target>`
+  - `$ cd jrc_intro_programming`
   - to change to the last working directory, `cd -`
   - to go "up" one directory, `cd ..`
   - to go "up" two directories with one command, `cd ../..`
