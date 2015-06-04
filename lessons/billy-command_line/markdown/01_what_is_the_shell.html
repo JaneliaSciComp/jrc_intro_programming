@@ -1,0 +1,57 @@
+<h2>What is the shell?</h2>
+
+<ol>
+<li><strong>CLI</strong> vs <strong>GUI</strong>
+<ul>
+<li>command line interface</li>
+<li>graphical user interface</li>
+</ul></li>
+<li>the command shell is just a program providing a <strong>REPL</strong> interface with the computer operating system</li>
+<li>REPL: read-evaluate-print loop
+<ul>
+<li>similar to MATLAB console, or interactive perl/python environments</li>
+<li><em>read</em> the input from the command line (the stuff you typed in)</li>
+<li><em>evaluate</em> the input, reading files and calling other programs as necessary</li>
+<li><em>print</em> the output back to the screen</li>
+<li><em>loop</em> back to the input prompt, ready for new input</li>
+</ul></li>
+<li>shells:
+<ul>
+<li>common: <code>bash</code> (Bourne Again SHell), <code>zsh</code>, <code>dash</code></li>
+<li>less common now: <code>tcsh</code>, <code>csh</code>, <code>ksh</code></li>
+</ul></li>
+<li>the prompt: customizable and often different on different systems, but usually represented as a <code>$</code></li>
+<li>some considerations, before we move on:
+<ul>
+<li>case-sensitive</li>
+<li>avoid whitespace in file names</li>
+<li>other bad characters in file/folder names: all punctuation except . - _</li>
+<li><code>.</code> is a dot</li>
+<li><code>/</code> is a forward-slash, <code>\</code> is a back-slash</li>
+<li><code>#</code> is a pound, hash, or octothorpe</li>
+<li><code>$</code> is a dollar sign</li>
+<li><code>*</code> is a star, or an asterisk</li>
+<li><code>^</code> is a caret</li>
+<li><code>()</code> are parentheses or parens</li>
+<li><code>[]</code> are square brackets</li>
+<li><code>{}</code> are braces or curly brackets</li>
+<li><code>_</code> is an underscore</li>
+<li><code>-</code> is a hyphen, dash, or minus sign</li>
+<li><code>~</code> is a tilde</li>
+<li>` is a back tick</li>
+<li><code>'</code> is a single quote</li>
+<li><code>"</code> is a double quote</li>
+<li>sometimes I will represent generic placeholders by placing them between a less-than sign and a greater-than sign, <code>&lt;like so&gt;</code>.  The angle brackets aren't needed in the actual commands.</li>
+<li>be careful with pasting from Word, Pages, some email clients, and some web browsers since the straight single and double quotes can be auto-corrected to curly single and double quotes</li>
+</ul></li>
+</ol>
+
+<h3>Checkpoint:</h3>
+
+<p>Open your command line.  In Windows, you will be using Git Bash, which I asked you to install before class.  In OS X, you will be using the built-in program Terminal, or the downloaded program iTerm2.  What does the prompt look like?</p>
+
+<p>At the prompt, type <code>echo $0</code> and press enter.  <code>echo</code> is a program that prints information to the screen, and <code>$0</code> is a variable representing the shell with which you are interacting, so the command should tell us which shell you are running.  For OS X, you should see something like <code>/bin/bash</code>, and for Windows with Git Bash you should see something ending with <code>/sh.exe</code>.</p>
+
+<p>Let's download some files so that we can all navigate the same environment:
+  - Type <code>git https://github.com/williamrowell/jrc_intro_programming.git</code> and press enter.
+  - If you get any error messages, ask for help.</p>

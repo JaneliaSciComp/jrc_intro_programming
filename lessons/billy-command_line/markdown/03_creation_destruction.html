@@ -1,0 +1,130 @@
+<h2>Creation and Destruction</h2>
+
+<ol>
+<li>Let's all get back to the same point in the hierarchy before moving on.
+<ul>
+<li><code>$ cd</code></li>
+<li><code>$ cd jrc_intro_programming/01_the_command_line</code></li>
+</ul></li>
+<li>To make a new directory, use the <code>mkdir</code> command.
+<ul>
+<li><code>mkdir manuscript</code></li>
+<li><code>ls -F manuscript</code></li>
+</ul></li>
+<li>Now we have a new folder for our manuscript, but how can we edit it at the command line?
+<ul>
+<li>considerations:
+<ul>
+<li>ideally something that works at the command line (to fit into our workflows)</li>
+<li>ideally something that most systems will have installed (for the sake of consistency across systems)</li>
+<li>definitely something that edits and saves raw text without fooling around with formatting</li>
+</ul></li>
+<li>CLI options:
+<ul>
+<li><code>nano</code>: available on OS X and linux/*nix by default, installed on Windows by the SWC installer (or directly from <a href="http://www.nano-editor.org/">here</a>).  Very shallow learning curve.  This is what we will use today.</li>
+<li><code>vi</code> or <code>emacs</code>: very powerful, but steeper learning curves than <code>nano</code>.  Not using today because we don't want to scare anyone off.</li>
+</ul></li>
+<li>GUI options:
+<ul>
+<li><em>Sublime Text</em> or <em>Text Wrangler</em> on OS X</li>
+<li><em>Notepad++</em> or <em>Sublime Text</em> on Windows</li>
+</ul></li>
+</ul></li>
+<li>Change into the <code>manuscript</code> directory (not going to tell you how at this point) and run <code>nano draft.txt</code> to create a new text file.  Write anything inside.  The list of commands for <code>nano</code> are at the bottom of the window.  The <code>^</code> symbol represents holding the Control key, so to exit <code>nano</code>, hold Control and press-X (which I'll write as <code>^X</code> in the future.)
+<ul>
+<li>How can you tell whether the file was created?</li>
+</ul></li>
+<li>How can we peek at the contents of the file?
+<ul>
+<li><code>$ cat draft.txt</code></li>
+<li><code>cat</code> is short for concatenate.  It concatenates the contents for all files passed as arguments and prints the output to the screen.  It's fine for viewing small text files.</li>
+</ul></li>
+<li>That draft was awful, and we aren't smart enough to use a version control system yet, so we're just going to delete it and start over again.  To delete a file, use the <code>rm</code> command and pass the filename as an argument.
+<ul>
+<li><code>$ rm draft.txt</code></li>
+<li>How can you tell if the file is gone?</li>
+<li>How can you remove a file from another directory without changing into that directory?</li>
+<li><strong>Important</strong>: Deleting a file from the command line is permanent.  This is not like moving a file into the Recycle Bin in Windows or Trash in OS X.</li>
+</ul></li>
+<li>Recreate <code>draft.txt</code> using <code>nano</code> and move up to the parent directory containing the <code>manuscript</code> folder.  If we want to delete the entire folder, how would you do it?
+<ul>
+<li><code>$ rm manuscript</code>
+<ul>
+<li><code>rm: manuscript: is a directory</code></li>
+</ul></li>
+<li><code>$ rmdir manuscript</code>
+<ul>
+<li><code>mdir: manuscript: Directory not empty</code></li>
+</ul></li>
+<li>These error messages are here to protect you.  Deleting a directory is a lot more dangerous than deleting an individual file.</li>
+<li><code>$ rm manuscript/draft.txt</code></li>
+<li><code>$ rmdir manuscript</code></li>
+</ul></li>
+<li><strong>Here be dragons</strong>: Sure would be tedious to delete every file in a folder before deleting the folder, right?  Well, there's a shortcut, but be very careful with it.
+<ul>
+<li><code>rm -r &lt;folder&gt;</code></li>
+</ul></li>
+<li>Recreate the <code>manuscript</code> folder, along with a <code>thesis</code> folder.  Change directories into <code>manuscript</code> and create the <code>draft.txt</code> file with some filler contents yet again.  What if you decided that <code>draft.txt</code> would no longer go in your manuscript, but would go into your thesis instead?  You can move files using the <code>mv</code> command.
+<ul>
+<li><code>mv &lt;file name and relative path&gt; &lt;target location&gt;</code></li>
+</ul></li>
+<li><code>mv</code> is also used to rename files and folders.
+<ul>
+<li><code>mv &lt;old name&gt; &lt;new name&gt;</code></li>
+</ul></li>
+<li>Create a new text file, <code>template.txt</code>, and type and save some filler text.  If this were a real template, you might want to make a copy to edit.  You can do this with the <code>cp</code> command.
+<ul>
+<li><code>cp &lt;file name and relative path&gt; &lt;target name or location&gt;</code></li>
+<li>Check to make sure the original file is still there.  Check to make sure the copy has been created.</li>
+<li>How could we tell that this is really a copy and not just a link or shortcut?  Test for that.</li>
+</ul></li>
+<li>In addition to the <code>.</code> and <code>..</code> special directories that we talked about earlier, there's another alias, <code>~</code>, that points to your home directory.  This is the directory that is intially opened when you start a new terminal window.
+<ul>
+<li>Change to your home directory using this shortcut.</li>
+<li>Determine the path to your home directory.  This will be different on different operating systems.</li>
+</ul></li>
+</ol>
+
+<h3>Challenges:</h3>
+
+<p>What is the output of the closing <code>ls</code> command in the sequence shown below?</p>
+
+<p><code>$ pwd</code>
+<code>/home/jamie/data</code>
+<code>$ ls</code>
+<code>proteins.dat</code>
+<code>$ mkdir recombine</code>
+<code>$ mv proteins.dat recombine</code>
+<code>$ cp recombine/proteins.dat ../proteins-saved.dat</code></p>
+
+<h2><code>$ ls</code></h2>
+
+<p>Suppose that:</p>
+
+<p><code>$ ls -F</code>
+<code>analyzed/  fructose.dat    raw/   sucrose.dat</code>
+What command(s) could you run so that the commands below will produce the output shown?</p>
+
+<p><code>$ ls</code>
+<code>analyzed   raw</code>
+<code>$ ls analyzed</code>
+<code>fructose.dat    sucrose.dat</code></p>
+
+<hr />
+
+<p>What does <code>cp</code> do when given several filenames and a directory name, as in:</p>
+
+<p><code>$ mkdir backup</code>
+<code>$ cp thesis/citations.txt thesis/quotations.txt backup</code></p>
+
+<hr />
+
+<p>What does <code>cp</code> do when given three or more filenames, as in:</p>
+
+<p><code>$ ls -F</code>
+<code>intro.txt    methods.txt    survey.txt</code>
+<code>$ cp intro.txt methods.txt survey.txt</code></p>
+
+<hr />
+
+<p>How can you move or copy a file into the parent of your current working directory?</p>

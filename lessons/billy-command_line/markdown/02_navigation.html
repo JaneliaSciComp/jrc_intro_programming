@@ -1,0 +1,118 @@
+<h2>Files, directories, and navigation</h2>
+
+<ol>
+<li>For our first real bash command, let's get existential.  Type <code>whoami</code> at the prompt and press enter.  (I'm going to stop telling you to press enter now.)  What is happening here in terms that we covered earlier today?  How does <code>bash</code> know what <code>whoami</code> means?</li>
+<li>four basic types of CLI commands:
+<ul>
+<li>built-ins: part of the shell</li>
+<li>aliases: user- or system-defined macros</li>
+<li>scripts: executable text files written in scripting languages like perl, python, shell, etc</li>
+<li>binaries: compiled executable files</li>
+</ul></li>
+<li><code>$ which whoami</code>
+<ul>
+<li>In this case, <code>which</code> is the command and <code>whoami</code> is the <strong>argument</strong>.  (You  may also hear it called the parameter.  <em>Argument</em> and <em>parameter</em> have very slightly different meanings in the world of programming, but it's mostly a semantic difference.)</li>
+<li><code>which</code> returns the <em>absolute path</em> to the program name passed as argument</li>
+<li><strong>path</strong> is exactly what it sounds like.
+<ul>
+<li>a hierarchical structure</li>
+<li>absolute paths start at the <em>root</em> directory, represented as a a forward-slash</li>
+<li>relative paths are relative to your current working directory</li>
+<li>folders followed by forward-slashes (<code>/</code>)</li>
+<li>case-sensitive</li>
+</ul></li>
+</ul></li>
+<li>How can we find out <em>where we are</em>?
+<ul>
+<li>Whichever directory we are currently in is our current working directory.</li>
+<li><code>pwd</code>, print working directory</li>
+<li>If <code>whoami</code> tells me who the user is, and <code>which</code> tells me where a program is located, why is it <code>pwd</code> instead of <code>whereami</code>.  Legacy.  Colorful, painful legacy.</li>
+</ul></li>
+<li>What is in our current working directory?
+<ul>
+<li><code>$ ls</code></li>
+</ul></li>
+<li>What kinds of things are they?  Files, directories, links, executable files?
+<ul>
+<li><code>$ ls -F</code></li>
+<li><code>-F</code> is a flag (also called a switch) that lets us specify an option or setting</li>
+</ul></li>
+<li><strong>Important Detour:</strong> to find out which flags are available, you can use a few options: <br />
+<ol>
+<li>the <code>--help</code> flag on many commands prints basic usage information</li>
+<li>the command <code>man</code>, passing the program name as the argument.  For instance, <code>man ls</code>.  This opens the <em>manual</em> page for this program, with detailed usage information.</li>
+<li><code>man</code> is not available in Git Bash, but you can also type "man <command>" into Google and view the man pages there.</li>
+</ol></li>
+<li>Detour: <code>man</code> pages open in something called a <em>pager</em>.  Pagers are used to display output that won't fit in one screen.  <UP>, <DOWN>, and <SPACE> will move around within the document.  You can search by typing a forward slash followed by the search term and step through the search results using <code>n</code>.  <strong>You can exit a pager by hitting <code>q</code>.</strong></li>
+<li>Detour: File extensions are short suffixes to filenames that can give us a hint about what is inside of the file.  For instance, <code>.txt</code> files contain text, <code>.jpg</code> files are JPEG images, and <code>.py</code> files are python scripts.</li>
+<li>Can we get directory listings for other directories?
+<ul>
+<li>Pass the absolute or relative path to the directory as an argument to <code>ls</code>.</li>
+<li><code>$ ls /</code></li>
+<li><code>$ ls jrc_intro_programming</code></li>
+</ul></li>
+<li>How do we change directories?
+<ul>
+<li><code>$ cd jrc_intro_programming</code></li>
+<li>to change to the last working directory, <code>cd -</code></li>
+<li>to go "up" one directory, <code>cd ..</code></li>
+<li>to go "up" two directories with one command, <code>cd ../..</code></li>
+</ul></li>
+<li>Detour: What does <code>..</code> mean?
+<ul>
+<li><code>ls -a</code> gives you a list of "all" files, including invisible files.</li>
+<li>Any file beginning with a <code>.</code> is invisible.</li>
+<li>Every directory has two <em>special</em> "folders", <code>.</code> and <code>..</code>. <code>.</code> points at the directory itself, and <code>..</code> points at the parent directory.</li>
+</ul></li>
+<li>Detour: tab completion
+<ul>
+<li>Typing things is hard.</li>
+<li>If you press the Tab key while typing, <code>bash</code> will attempt to automatically complete your thought, as if reading your mind.  Ok, really it just matches up to the first point of ambiguity.  For example, if your directory is empty except for data files named:</li>
+<li><code>data1.txt</code></li>
+<li><code>data2.txt</code></li>
+<li><code>data3.txt</code></li>
+<li><code>data4.txt</code>
+then if you type <code>d</code> (without pressing enter) and press the Tab key, it would be automatically extended to <code>data</code>, waiting for you to disambiguate before moving on.</li>
+<li>Use tab-completion to your advantage.  It reduces errors due to typos and allows you to move much more quickly.</li>
+<li>While we're on the subject of saving time, you can use the <UP> and <DOWN> arrows to cycle through previous commands in your history, and if you want a complete history, try the <code>history</code> command.</li>
+</ul></li>
+</ol>
+
+<h3>Challenges:</h3>
+
+<p>This is your directory tree for the first two exercises:</p>
+
+<p><img src="filesystem-challenge.svg" alt="Directory Tree" /></p>
+
+<p>If <code>pwd</code> displays <code>/users/thing</code>, what will <code>ls ../backup</code> display?</p>
+
+<ol>
+<li><code>../backup: No such file or directory</code></li>
+<li><code>2012-12-01 2013-01-08 2013-01-27</code></li>
+<li><code>2012-12-01/ 2013-01-08/ 2013-01-27/</code></li>
+<li><code>original pnas_final pnas_sub</code></li>
+</ol>
+
+<p>If <code>pwd</code> displays <code>/users/backup</code>, and <code>-r</code> tells <code>ls</code> to display things in reverse order, which command(s) will display: <code>pnas-sub/ pnas-final/ original/</code></p>
+
+<ol>
+<li><code>ls pwd</code></li>
+<li><code>ls -r -F</code></li>
+<li><code>ls -r -F /users/backup</code></li>
+<li>Either #2 or #3 above, but not #1.</li>
+</ol>
+
+<hr />
+
+<p>What does the command <code>cd</code> without a directory name do?</p>
+
+<ol>
+<li>It has no effect.</li>
+<li>It changes the working directory to <code>/</code>.</li>
+<li>It changes the working directory to the user's home directory.</li>
+<li>It produces an error message.</li>
+</ol>
+
+<hr />
+
+<p>What does the command <code>ls</code> do when used with the <code>-s</code> and <code>-h</code> arguments?</p>

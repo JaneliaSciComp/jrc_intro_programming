@@ -1,0 +1,29 @@
+<h2>Finding Stuff</h2>
+
+<ol>
+<li><code>ls</code> is great for getting a directory listing, and with wildcards you can narrow the listing down a bit.  If you want anything more complicated, you should use the <code>find</code> command.
+<ul>
+<li><code>find . -name '*_0*.txt'</code></li>
+<li><code>man find</code></li>
+<li><code>find . -ctime 2d</code></li>
+</ul></li>
+<li>There are advantages and disadvantages of storing data in plain text format.  I won't cover all of them here.  But, one advantage of storing data in plain text is the ability to search the contents of files.  The most commonly used command for this is <code>grep</code>.  Sorry for another arcane name, a contraction of <em>global/regular expression/print</em>.
+<ul>
+<li><code>grep</code> prints lines matching a pattern.</li>
+<li><code>man grep</code> to get the basic idea of how it works.</li>
+<li><code>grep 243 data/*</code></li>
+</ul></li>
+</ol>
+
+<h2>Making our first shell script</h2>
+
+<ol>
+<li>Introduce the Chipotle <code>.csv</code> file.</li>
+<li>Take a look at the contents with <code>head</code> and <code>tail</code>.</li>
+<li>How can we find all of the 'Steak Burrito' orders?</li>
+<li>What if we only want to see 'Steak Burrito' orders with 'Tomatillo Salsa'?</li>
+<li>Create a shell script by copying that line of code into a text file.</li>
+<li>Introduce concept of $1.</li>
+<li>Replace hard-coded values with tokens to make this a script.</li>
+<li>Run it with <code>bash orders.sh</code>.  Add shebang, chmod +x and run it with <code>./orders.sh</code>.</li>
+</ol>
