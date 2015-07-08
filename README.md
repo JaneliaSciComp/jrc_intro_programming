@@ -73,16 +73,22 @@ During the workshop, we'll be using `nano`, which will be installed by the Softw
 
 
 # Syllabus
-## Classes 1 and 2 (March 5th and 6th)
+## Classes 1 and 2 (July 14th and 15th)
 Session 1 introduces the command line interface, including navigating directory structures, manipulating files, editing text files, using filter commands, stringing together filters using pipes and redirection, and possibly making simple bash scripts.
 Session 2 is an introduction to basic programming concepts in python, including data types/structures, conditional expressions, loops, and functions.  
-## Classes 3 and 4 (March 12th and 13th) 
+## Classes 3 and 4 (July 21th and 22th) 
 Sessions 3 and 4 are a little more flexible.  We will write a few complete programs in python, learn how to use the version control program `git` to manage work in progress, and try out a few commonly used python libraries for data analysis.  If there's a specific topic you'd like to cover, let me know in an email or in person.
 
 # Etherpad
-Please share notes and questions in [this online notepad](https://etherpad.mozilla.org/peNU8PIi2o) during class.  The helpers and I will keep an eye on it and try to answer important questions as they arise.
+Please share notes and questions in [this online notepad](https://etherpad.mozilla.org/iXhVNQ0b1U) during class.  The helpers and I will keep an eye on it and try to answer important questions as they arise.
 
 # Links
    
 # Thanks
 Thanks to [Software Carpentry](http://software-carpentry.org/) for inspiring the curriculum and providing the Software Carpentry Installer.
+
+[![Janelia Logo](hhmi_janelia_color.png)](http://www.janelia.org)
+
+[Scientific Computing](http://www.janelia.org/research-resources/computing-resources)  
+[Janelia Farm Research Campus](http://www.janelia.org)  
+[Howard Hughes Medical Institute](http://www.hhmi.org)
