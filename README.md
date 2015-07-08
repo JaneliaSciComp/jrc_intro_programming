@@ -87,7 +87,9 @@ Please share notes and questions in [this online notepad](https://etherpad.mozil
 # Thanks
 Thanks to [Software Carpentry](http://software-carpentry.org/) for inspiring the curriculum and providing the Software Carpentry Installer.
 
-[![Janelia Logo](hhmi_janelia_color.png)](http://www.janelia.org)
+The Intro to programming class is taught by Billy Rowell (rowellw@janelia.hhmi.org) and Charlotte Weaver (weaverc10@janelia.hhmi.org)
+
+[![Janelia Logo](HHMI_Janelia_Color.png)](http://www.janelia.org)
 
 [Scientific Computing](http://www.janelia.org/research-resources/computing-resources)  
 [Janelia Farm Research Campus](http://www.janelia.org)  
