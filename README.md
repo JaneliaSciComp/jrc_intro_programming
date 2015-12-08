@@ -82,7 +82,7 @@ Session 2 is an introduction to basic programming concepts in python, including 
 Sessions 3 and 4 are a little more flexible.  We will write a few complete programs in python, learn how to use the version control program `git` to manage work in progress, and try out a few commonly used python libraries for data analysis.  If there's a specific topic you'd like to cover, let me know in an email or in person.
 
 # Etherpad
-Please share notes and questions in [this online notepad](https://etherpad.mozilla.org/iXhVNQ0b1U) during class.  The helpers and I will keep an eye on it and try to answer important questions as they arise.
+Please share notes and questions in [this online notepad](https://public.etherpad-mozilla.org/p/5JjgoUCJ0X) during class.  The helpers and I will keep an eye on it and try to answer important questions as they arise.
 
 # Links
 [July 2015 online notes](https://etherpad.mozilla.org/iXhVNQ0b1U)
