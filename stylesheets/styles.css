@@ -532,20 +532,15 @@ body {
   padding: 0px 0 20px 0px;
   margin: 0px;
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f0e7d5;
+  color: #111;
   font-weight: normal;
   background: #252525;
   background-attachment: fixed !important;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
-  background: -webkit-linear-gradient(#2a2a29, #1c1c1c);
-  background: -moz-linear-gradient(#2a2a29, #1c1c1c);
-  background: -o-linear-gradient(#2a2a29, #1c1c1c);
-  background: -ms-linear-gradient(#2a2a29, #1c1c1c);
-  background: linear-gradient(#2a2a29, #1c1c1c);
+  background: linear-gradient(#058d96, #00a450, #52b448, #8ac341);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #e8e8e8;
+  color: #058d96;
   margin: 0 0 10px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -568,7 +563,7 @@ h2 {
 }
 
 h4, h5, h6 {
-  color: #e8e8e8;
+  color: #00a450;
 }
 
 h3 {
@@ -576,16 +571,16 @@ h3 {
   line-height: 24px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
-  color: #b6b6b6;
+  color: #52b448;
 }
 
 a {
-  color: #ffcc00;
+  color: rgb(63,194,205);
   font-weight: 400;
   text-decoration: none;
 }
 a:hover {
-  color: #ffeb9b;
+  color: rgb(221, 130, 58);
 }
 
 a small {
@@ -593,10 +588,6 @@ a small {
   color: #666;
   margin-top: -0.6em;
   display: block;
-}
-
-ul {
-  list-style-image: url("../images/bullet.png");
 }
 
 strong {
@@ -609,6 +600,7 @@ strong {
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
+  background: rgba(255,255,255,0.8);
 }
 
 section img {
@@ -624,7 +616,7 @@ blockquote {
 
 code {
   font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color: #efefef;
+  color: #111;
   font-size: 13px;
   margin: 0 4px;
   padding: 4px 6px;
@@ -638,7 +630,7 @@ code {
 
 pre {
   padding: 8px 15px;
-  background: #191919;
+  background: #111;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -669,7 +661,7 @@ th {
   text-align: left;
   padding: 5px 10px;
   border-bottom: 1px solid #434343;
-  color: #b6b6b6;
+  color: #52b448;
   font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
 }
@@ -800,7 +792,7 @@ section #title h1 {
   line-height: 36px;
 }
 section #title p {
-  color: #d7cfbe;
+  color: #52b448;
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -810,7 +802,7 @@ section #title .credits {
   font-size: 11px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #696969;
+  color: #52b448;
   margin-top: -10px;
 }
 section #title .credits.left {
