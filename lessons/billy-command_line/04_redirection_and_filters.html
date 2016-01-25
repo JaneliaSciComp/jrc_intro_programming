@@ -1,0 +1,82 @@
+<h2>Redirection and Filters</h2>
+
+<ol>
+<li>We know how to navigate folder structures, see which files are in a folder, and make simple text files.  So far, the command line doesn't seem any more powerful than <code>File Explorer</code> or <code>Finder</code>.  What's the big deal about the command line, then, and why are we wasting a day on it instead of learning about Python?
+<ul>
+<li>There are a lot of small command line tools, and a system for redirecting input/output using these small tools (or your own scripts) to build more complicated pipelines or workflows.</li>
+</ul></li>
+<li><strong>Wildcards:</strong> You're probably already famiilar with using the asterisk (<code>*</code>) as a wildcard to represent any number of any characters.  There are some other wildcards or wildcard expressions that you can use to match multiple files.
+<ul>
+<li><code>ls</code> examples:
+<ul>
+<li><code>*</code> - any number of characters</li>
+<li><code>?</code> - any single character</li>
+<li><code>[AC]</code> - specific characters (in this case, <code>A</code> or <code>C</code>)</li>
+<li><code>[!AC]</code> - exclude specific characters (in this case, <code>A</code> or <code>C</code>)</li>
+<li><code>[A-C]</code> - range of specific characters (in this case, <code>A</code>, <code>B</code>, or <code>C</code>)</li>
+<li><code>{abc,def}</code> - terms (in this case, <code>abc</code> or <code>def</code>) (no spaces)</li>
+</ul></li>
+<li>Try out a few examples in the <code>data</code> directory.</li>
+</ul></li>
+<li>So, what if you wanted to make a list of all of the data files in your folder?  How can we send the <em>output</em> of <code>ls</code> somewhere other than the screen?
+<ul>
+<li>We can redirect the output of your <code>ls</code> command using the <code>&gt;</code> syntax.</li>
+<li>Try a couple examples.</li>
+<li>Find all of the files from the experiments in the 30s and store them as <code>thirties.txt</code>.</li>
+<li>Find all of the files from even-numbered experiments and store the names as <code>even.txt</code>.</li>
+<li>Before we move on, <code>ls -lah experiment*.txt &gt; data_files.txt</code></li>
+<li>How can we tell whether it worked?</li>
+</ul></li>
+<li><strong>Warning:</strong> The <code>&gt;</code> operator completely overwrites the file if it already exists.  If you want to append to the file instead, use <code>&gt;&gt;</code>.</li>
+<li>There are a couple commands we can use to peek inside and get a feel for what is inside a file.
+<ul>
+<li><code>head</code> and <code>tail</code>
+<ul>
+<li>How many results does head show by default?  Where do you think you could find this out if you didn't want to check empirically?  How could you get more or fewer lines?</li>
+</ul></li>
+<li>pagers, like <code>less</code> or <code>more</code> (or <code>most</code>)
+<ul>
+<li>What interface is this similar to?  How do you navigate?  How do you exit?</li>
+</ul></li>
+</ul></li>
+<li><strong>Detour:</strong> INPUT/OUTPUT.  CLI programs take input from the command line, typically called <em>standard input</em>, or <code>stdin</code>, and send output back to the screen, typically called <em>standard output</em>, or <code>stdout</code>.  There's a third I/O stream called <em>standard error</em> (<code>stderr</code>) that conveys error messages.
+<ul>
+<li>So, what actually happens when you use the <code>&gt;</code> operator is that <code>stdout</code> is redirected into a file.  The implied command is <code>1&gt; output</code></li>
+<li>You can redirect <code>stderr</code> to a file using <code>2&gt; output</code>.</li>
+<li>You can direct something as <code>stdin</code> using the <code>&lt;</code> operator.  This is usually unnecessary, but it's good to know that this syntax exists.</li>
+</ul></li>
+<li>So, what if instead of redirecting output to a file, we wanted to redirect the output (<code>stdout</code>) from one command to use as the input (<code>stdin</code>) for another command?
+<ul>
+<li>We can <em>pipe</em> <code>stdout</code> to <code>stdin</code> using the <code>|</code> operator.</li>
+</ul></li>
+<li>In the <code>data</code> folder for this class session, there are 100 simulated experiment files.  They each have a data series of varying length.  We want to get the names of the 15 longest experiments.  This isn't as easy as sorting by file size in this case, because of the way the numbers are stored.
+<ul>
+<li>Peek inside a few files.  experiment 91, 8, 77.  What would be an easy way for us to tell how many data points there are in each file?</li>
+<li><code>wc</code>
+<ul>
+<li>How can we clean up the output to only show the kind of information we're interested in?</li>
+<li><code>wc -l experiment_*.txt</code></li>
+</ul></li>
+<li>Now we have a list of the experiments and their length.  Now what do we need to do?
+<ul>
+<li>First off, now's a good time to start using the <UP> arrow to cycle through history.</li>
+<li><code>sort</code></li>
+<li>How can we reverse the order such that the largest files are at the top?</li>
+<li><code>sort -r</code></li>
+</ul></li>
+<li>Now we have a sorted list, but we just want the names of the 15 biggest files.  What command that we learned earlier today will do that?
+<ul>
+<li><code>head -16</code>:  Ok, so this kind of works, but it also returns the summary for the folder.  Not a huge deal, but Can we combine it with anything else to remove the summary line?</li>
+<li><code>head -16 | tail -15</code></li>
+</ul></li>
+<li>And, finally, we want to store this information in a text file, <code>longest_datasets.txt</code>.
+<ul>
+<li><code>&gt; longest_datasets.txt</code></li>
+</ul></li>
+<li><code>wc -l experiment_*.txt | sort -r | head -16 | tail -15 &gt; longest_datasets.txt</code></li>
+</ul></li>
+<li>There's a related syntax to embed the output from one program in the call for another program.  It's good to know that it exists, but you don't need it right away.
+<ul>
+<li><code>$()</code></li>
+</ul></li>
+</ol>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<experiment archive_behavior="default" archive_path=""
+    assay="fly_olympiad_box" exp_datetime="20140507T124629"
+    experimenter="rowellw" flag_aborted="0" flag_legacy="0"
+    flag_redo="0" flag_review="0" protocol="EP_Box_v004p1.xlsx"
+    requesting_lab="" screen_reason="standard" screen_type="primary"
+    transfer_behavior="move" transfer_path="/groups/sciserv/centralcomplex/box_data">
+    <apparatus apparatus_id="1407879" box="Apollo"
+        computer="Olympiad-Apollo" room="2C.310.2"/>
+    <session id="1">
+        <flies cross_barcode="85744" cross_date="20140421T000000"
+            effector="CTRL_DL_1500090_0028" flip_date="20140421T000000"
+            flip_used="0" gender="m" line="FCF_pBDPGAL4U_1500437"
+            num_flies="15" num_flies_dead="0" robot_stock_copy="unknown" wish_list="171">
+            <genotype>FCF_pBDPGAL4U_1500437 &amp; CTRL_DL_1500090_0028</genotype>
+            <rearing rearing_incubator="4" rearing_protocol="RP_Olympiad_v003p2.xlsx"/>
+            <handling handler_cross="gonzalezg"
+                handler_sorting="rowellw" handler_starvation="rowellw"
+                handling_protocol="HP_Box_v001p0.xlsx" hours_sorted="24" hours_starved="1"/>
+        </flies>
+    </session>
+    <session id="2">
+        <flies cross_barcode="85744" cross_date="20140421T000000"
+            effector="CTRL_DL_1500090_0028" flip_date="20140421T000000"
+            flip_used="0" gender="m" line="FCF_pBDPGAL4U_1500437"
+            num_flies="15" num_flies_dead="0" robot_stock_copy="unknown" wish_list="171">
+            <genotype>FCF_pBDPGAL4U_1500437 &amp; CTRL_DL_1500090_0028</genotype>
+            <rearing rearing_incubator="4" rearing_protocol="RP_Olympiad_v003p2.xlsx"/>
+            <handling handler_cross="gonzalezg"
+                handler_sorting="rowellw" handler_starvation="rowellw"
+                handling_protocol="HP_Box_v001p0.xlsx" hours_sorted="24" hours_starved="1"/>
+        </flies>
+    </session>
+    <session id="3">
+        <flies cross_barcode="85744" cross_date="20140421T000000"
+            effector="CTRL_DL_1500090_0028" flip_date="20140421T000000"
+            flip_used="0" gender="m" line="FCF_pBDPGAL4U_1500437"
+            num_flies="15" num_flies_dead="0" robot_stock_copy="unknown" wish_list="171">
+            <genotype>FCF_pBDPGAL4U_1500437 &amp; CTRL_DL_1500090_0028</genotype>
+            <rearing rearing_incubator="4" rearing_protocol="RP_Olympiad_v003p2.xlsx"/>
+            <handling handler_cross="gonzalezg"
+                handler_sorting="rowellw" handler_starvation="rowellw"
+                handling_protocol="HP_Box_v001p0.xlsx" hours_sorted="24" hours_starved="1"/>
+        </flies>
+    </session>
+    <session id="4">
+        <flies cross_barcode="85744" cross_date="20140421T000000"
+            effector="CTRL_DL_1500090_0028" flip_date="20140421T000000"
+            flip_used="0" gender="m" line="FCF_pBDPGAL4U_1500437"
+            num_flies="15" num_flies_dead="0" robot_stock_copy="unknown" wish_list="171">
+            <genotype>FCF_pBDPGAL4U_1500437 &amp; CTRL_DL_1500090_0028</genotype>
+            <rearing rearing_incubator="4" rearing_protocol="RP_Olympiad_v003p2.xlsx"/>
+            <handling handler_cross="gonzalezg"
+                handler_sorting="rowellw" handler_starvation="rowellw"
+                handling_protocol="HP_Box_v001p0.xlsx" hours_sorted="24" hours_starved="1"/>
+        </flies>
+    </session>
+    <session id="5">
+        <flies cross_barcode="85744" cross_date="20140421T000000"
+            effector="CTRL_DL_1500090_0028" flip_date="20140421T000000"
+            flip_used="0" gender="m" line="FCF_pBDPGAL4U_1500437"
+            num_flies="15" num_flies_dead="0" robot_stock_copy="unknown" wish_list="171">
+            <genotype>FCF_pBDPGAL4U_1500437 &amp; CTRL_DL_1500090_0028</genotype>
+            <rearing rearing_incubator="4" rearing_protocol="RP_Olympiad_v003p2.xlsx"/>
+            <handling handler_cross="gonzalezg"
+                handler_sorting="rowellw" handler_starvation="rowellw"
+                handling_protocol="HP_Box_v001p0.xlsx" hours_sorted="24" hours_starved="1"/>
+        </flies>
+    </session>
+    <session id="6">
+        <flies cross_barcode="85744" cross_date="20140421T000000"
+            effector="CTRL_DL_1500090_0028" flip_date="20140421T000000"
+            flip_used="0" gender="m" line="FCF_pBDPGAL4U_1500437"
+            num_flies="15" num_flies_dead="0" robot_stock_copy="unknown" wish_list="171">
+            <genotype>FCF_pBDPGAL4U_1500437 &amp; CTRL_DL_1500090_0028</genotype>
+            <rearing rearing_incubator="4" rearing_protocol="RP_Olympiad_v003p2.xlsx"/>
+            <handling handler_cross="gonzalezg"
+                handler_sorting="rowellw" handler_starvation="rowellw"
+                handling_protocol="HP_Box_v001p0.xlsx" hours_sorted="24" hours_starved="1"/>
+        </flies>
+    </session>
+    <environment humidity="30.4" temperature="32.4"/>
+    <notes_behavioral/>
+    <notes_technical/>
+    <notes_keyword/>
+</experiment>
