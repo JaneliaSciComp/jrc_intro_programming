@@ -1258,140 +1258,9 @@ about what exactly "open" means in practice.</p>
 
 <h3>Licensing</h3>
 
-<p>The first question is licensing.
-Broadly speaking,
-there are two kinds of open license for software,
-and half a dozen for data and publications.
-For software,
-people can choose between the <a href="http://opensource.org/licenses/GPL-3.0">GNU Public License</a> (GPL) on the one hand,
-and licenses like the <a href="http://opensource.org/licenses/MIT">MIT</a>
-and <a href="http://opensource.org/licenses/BSD-2-Clause">BSD</a> licenses on the other.
-All of these licenses allow unrestricted sharing and modification of programs,
-but the GPL is <a href="glossary.html#infective_license">infective</a>:
-anyone who distributes a modified version of the code
-(or anything that includes GPL'd code)
-must make <em>their</em> code freely available as well.</p>
-
-<p>Proponents of the GPL argue that this requirement is needed
-to ensure that people who are benefiting from freely-available code
-are also contributing back to the community.
-Opponents counter that many open source projects have had long and successful lives
-without this condition,
-and that the GPL makes it more difficult to combine code from different sources.
-At the end of the day,
-what matters most is that:</p>
-
-<ol>
-<li>every project have a file in its home directory
-called something like <code>LICENSE</code> or <code>LICENSE.txt</code>
-that clearly states what the license is, and</li>
-<li>people use existing licenses rather than writing new ones.</li>
-</ol>
-
-<p>The second of these points is as important as the first:
-most scientists are not lawyers,
-so wording that may seem sensible to a layperson
-may have unintended gaps or consequences.
-The <a href="http://opensource.org/">Open Source Initiative</a>
-maintains a list of open source licenses,
-and <a href="http://www.tldrlegal.com/">tl;drLegal</a> explains most of them in plain English.</p>
-
-<p>When it comes to data, publications, and other "static" material,
-scientists have many more options to choose from.
-The good news is that an organization called [Creative Commons(http://creativecommons.org/)
-has prepared a set of licenses using combinations of four basic restrictions:</p>
-
-<ul>
-<li>Attribution: derived works must give the original author credit for their work.</li>
-<li>No Derivatives: people may copy the work, but must pass it along unchanged.</li>
-<li>Share Alike: derivative works must license their work under the same terms as the original.</li>
-<li>Noncommercial: free use is allowed, but commercial use is not.</li>
-</ul>
-
-<p>These four restrictions are abbreviated "BY", "ND", "SA", and "NC" respectively,
-so "CC-BY-ND" means,
-"People can re-use the work both for free and commercially,
-but cannot make changes and must cite the original."
-These <a href="http://creativecommons.org/licenses/">short descriptions</a>
-summarize the six CC licenses in plain language,
-and include links to their full legal formulations.</p>
-
-<p>There is one other important license that doesn't fit into this categorization.
-Scientists (and other people) can choose to put material in the public domain,
-which is often abbreviated "PD".
-In this case,
-anyone can do anything they want with it,
-without needing to cite the original
-or restrict further re-use.
-The table below shows how the six Creative Commons licenses and PD relate to one another:</p>
-
-<table border="1">
-  <tr>
-    <td></td>
-    <td colspan="7" align="center">Licenses that can be used for derivative work or adaptation</td>
-  </tr>
-  <tr>
-    <td>Original work</td> <td>by</td> <td>by-nc</td> <td>by-nc-nd</td> <td>by-nc-sa</td> <td>by-nd</td> <td>by-sa</td> <td>pd</td>
-  </tr>
-  <tr>
-    <td>by</td>       <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td> </td>
-  </tr>
-  <tr>
-    <td>by-nc</td>    <td> </td> <td>X</td> <td>X</td> <td>X</td> <td> </td> <td> </td> <td> </td>
-  </tr>
-  <tr>
-    <td>by-nc-nd</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
-  </tr>
-  <tr>
-    <td>by-nc-sa</td> <td> </td> <td> </td> <td> </td> <td>X</td> <td> </td> <td> </td> <td> </td>
-  </tr>
-  <tr>
-    <td>by-nd</td>    <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
-  </tr>
-  <tr>
-    <td>by-sa</td>    <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td>X</td> <td> </td>
-  </tr>
-  <tr>
-    <td>pd</td>       <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
-  </tr>
-</table>
-
-<p><a href="http://software-carpentry.org/license.html">Software Carpentry</a>
-uses CC-BY for its lessons and the MIT License for its code
-in order to encourage the widest possible re-use.
-Again,
-the most important thing is for the <code>LICENSE</code> file in the root directory of your project
-to state clearly what your license is.
-You may also want to include a file called <code>CITATION</code> or <code>CITATION.txt</code>
-that describes how to reference your project;
-the one for Software Carpentry states:</p>
-
-<pre><code>To reference Software Carpentry in publications, please cite both of the following:
-
-Greg Wilson: "Software Carpentry: Getting Scientists to Write Better
-Code by Making Them More Productive".  Computing in Science &amp;
-Engineering, Nov-Dec 2006.
-
-Greg Wilson: "Software Carpentry: Lessons Learned". arXiv:1307.5448,
-July 2013.
-
-@article{wilson-software-carpentry-2006,
-    author =  {Greg Wilson},
-    title =   {Software Carpentry: Getting Scientists to Write Better Code by Making Them More Productive},
-    journal = {Computing in Science \&amp; Engineering},
-    month =   {November--December},
-    year =    {2006},
-}
-
-@online{wilson-software-carpentry-2013,
-  author      = {Greg Wilson},
-  title       = {Software Carpentry: Lessons Learned},
-  version     = {1},
-  date        = {2013-07-20},
-  eprinttype  = {arxiv},
-  eprint      = {1307.5448}
-}
-</code></pre>
+<p>Janelia has its own software <a href='http://license.janelia.org/license/'>license</a>. If you would like to make your software publically
+available, your first stop should be to tech-transfer and they can help point you in the right direction.
+</p>
 
 <h3>Hosting</h3>
 
@@ -1410,11 +1279,10 @@ a scientist who has spent ten years collecting data
 would like to be sure that data will still be available ten years from now,
 but that's well beyond the lifespan of most of the grants that fund academic infrastructure.</p>
 
-<p>The alternative is to use a public hosting service like <a href="http://github.com">GitHub</a>,
+<p>The alternative is to use a public hosting service like 
+<a href="http://github.com">GitHub</a>,
 <a href="http://bitbucket.org">BitBucket</a>,
-<a href="http://code.google.com">Google Code</a>,
-or <a href="http://sourceforge.net">SourceForge</a>.
-All of these allow people to create repositories through a web interface,
+These allow people to create repositories through a web interface,
 and also provide mailing lists,
 ways to keep track of who's doing what,
 and so on.
@@ -1437,30 +1305,4 @@ but many institutions may not allow researchers to do this,
 either because they want to protect future patent applications
 or simply because what's new is often also frightening.</p>
 
-<h3>Get the Facts</h3>
 
-<p>Most students don't actually know who owns their work.
-Does it belong to the university?
-To their supervisor?
-Can they take their work with them if they leave the university,
-or did something in the fine print of the registration forms they signed without reading
-hand that to someone else?</p>
-
-<p>Most faculty and administrators don't actually know either.
-Instead,
-they half-remember what the rules were five or ten years ago,
-but haven't kept up with changes made since.
-As a result,
-many research projects are open sourced by fiat:
-a student or faculty member declares that the work is covered by a particular license,
-puts it into a public repository,
-and waits for someone to object.</p>
-
-<p>This approach has worked surprisingly well so far,
-but we still suggest that people ask someone from their institution's intellectual property office
-to give a lunchtime talk on these issues
-<em>before</em> deciding what to do and how to do it:
-It's clear that tomorrow's science and scientific computing will be more open than yesterday's,
-and that this will benefit everyone,
-but the fewer stumbles we make along the way,
-the faster we'll get there.</p>
