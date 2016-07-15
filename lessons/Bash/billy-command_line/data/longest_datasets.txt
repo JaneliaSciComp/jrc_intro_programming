@@ -1,0 +1,15 @@
+     248 experiment_024.txt
+     247 experiment_031.txt
+     242 experiment_041.txt
+     238 experiment_073.txt
+     236 experiment_050.txt
+     232 experiment_039.txt
+     228 experiment_006.txt
+     221 experiment_010.txt
+     218 experiment_027.txt
+     217 experiment_067.txt
+     214 experiment_007.txt
+     213 experiment_082.txt
+     211 experiment_026.txt
+     205 experiment_003.txt
+     204 experiment_092.txt
