@@ -1,83 +1,162 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Introduction to Python Programming Workshop by williamrowell</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SHIELD - Free Bootstrap 3 Theme">
+    <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <title> Janelia Python Class</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link href="assets/css/animate-custom.css" rel="stylesheet">
+
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
-  <body>
 
-    <div class="wrapper">
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+  	<div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
 
-      <section>
-        <div id="title">
-          <h1>Introduction to Python Programming Workshop</h1>
-          <p class='tight'><img class='left' src='HHMI_Janelia_Color.png' alt='HHMI Janelia'></img></p>
-          <p>@Janelia Research Campus</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/csweaver">csweaver</a></span>
-          <span class="credits right">Project compiled by <a href="https://github.com/williamrowell">williamrowell</a></span>
-        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" class="smoothScroll">Home</a></li>
+			<li> <a href="#topics" class="smoothScroll"> Topics</a></li>
+			<li> <a href="#about" class="smoothScroll"> About</a></li>
+			<li> <a href="#syllabus" class="smoothScroll"> Syllabus</a></li>
+			<li> <a href="#install" class="smoothScroll"> Installation Instructions</a></li>
+			<li> <a href="#links" class="smoothScroll"> Links</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
 
-        <h1>
-<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h1>
+  
+  
+		<!-- ==== HEADERWRAP ==== -->
+	    <div id="headerwrap" id="home" name="home">
+			<header class="clearfix">
+	  		 		<img style='background-color:white; padding: 0px 50px; margin-bottom: 30px;' src='assets/janelia_logo.png' />
+	  		 		<!-- <h1><span class="icon icon-shield"></span></h1> -->
+	  		 		<p>Introduction to Programming</p>
+	  		 		<p>with Python</p>
+	  		</header>	    
+	    </div><!-- /headerwrap -->
 
-<ul>
-<li>
-<a href="#setup">Setup</a><br>
-<ul>
-<li>
-<a href="#osx">OSX</a><br>
-</li>
-<li>
-<a href="#windows">Windows</a><br>
-</li>
-<li>
-<a href="#linux">Linux</a><br>
-</li>
-</ul>
-</li>
-<li>
-<a href="#syllabus">Syllabus</a><br>
-<ul>
-<li><a href="#classes-1-and-2">Classes 1 and 2</a></li>
-<li><a href="#classes-3-and-4">Classes 3 and 4</a></li>
-</ul>
-</li>
-<li>
-<a href="#etherpad">Etherpad</a><br>
-</li>
-<li>
-<a href="#links">Links</a><br>
-</li>
-<li>
-<a href="#thanks">Thanks</a><br>
-</li>
-</ul>
+		<!-- ==== GREYWRAP ==== -->
+		<div id="greywrap">
+			<div id='topics' class="row">
+				<h1 class="centered">WHAT YOU WILL LEARN</h1>
+				<hr>
+				<div class="col-lg-4 callout">
+					<h2>Python</h2>
+					<p>Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.</p>
+				</div><!-- col-lg-4 -->
+					
+				<div class="col-lg-4 callout">
+					<h2>Git and Github</h2>
+					<p>Git is a powerful version control system allowing you to store a history of all the files in your project. Github is a website that allows you to use git to share your projects and discover someone else's. </p>
+				</div><!-- col-lg-4 -->	
+				
+				<div class="col-lg-4 callout">
+					<h2>Bash Shell</h2>
+					<p>A Unix command prompt allows users to direct the operation of the computer by entering commands as text for a command line interpreter to execute, or by creating text scripts of one or more such commands. Bash is the most common flavor of Unix prompt. </p>
+				</div><!-- col-lg-4 -->	
+			</div><!-- row -->
+		</div><!-- greywrap -->
+		
+		
+		<!-- ==== SECTION DIVIDER1 -->
+		<section id='about' class="section-divider textdivider divider1">
+			<div class="container">
+				<h1>JOIN US</h1>
+				<hr>
+				<p>Instructor: <a class='light' href='https://www.janelia.org/people/charlotte-weaver'>Charlotte Weaver</a></p>
+				<p>TAs: <a  class='light' href='https://www.janelia.org/people/donald-j-olbris'>Don Olbris</a>, <a  class='light' href='https://www.janelia.org/people/alex-weston'>Alex Weston</a></p>
+				<p>Dates: July 22nd, 23rd, 28th, 29th, 2016</p>
+				<p>Room: Synapse</p>
+				<p>Time: 1:00 - 4:00 p.m.</p>
+			</div><!-- container -->
+		</section><!-- section -->
+			<!-- ==== TEAM MEMBERS ==== -->
+		<div class="container" id="syllabus" name="team">
+		<br>
+			<div class="row white centered">
+				<h1 class="centered">SYLLABUS</h1>
+				<hr>
+				<br>
+				<div class="col-lg-3 centered">
+					<h4><b>Day 1</b></h4>
+					<p>We introduces the command line interface, including navigating directory structures, manipulating files, editing text files, using filter commands, stringing together filters using pipes and redirection, and making simple bash scripts.</p>
+				</div><!-- col-lg-3 -->
+				
+				<div class="col-lg-3 centered">
+					<h4><b>Day 2</b></h4>
+					<p>We introduce basic programming concepts in python, including data types/structures, conditional expressions, loops, and functions. </p>
+				</div><!-- col-lg-3 -->
+				
+				<div class="col-lg-3 centered">
+					<h4><b>Day 3</b></h4>
+					<p>We finish up basic programming in python. We introduce version control using git and github's desktop application</p>
+				</div><!-- col-lg-3 -->
+				
+				<div class="col-lg-3 centered">
+					<h4><b>Day 4</b></h4>
+					<p>We learn about using numpy for data analysis and matplotlib for plotting and analysis</p>
+				</div><!-- col-lg-3 -->
+			</div><!-- row -->
+		</div><!-- container -->	
+		
+		<!-- ==== SECTION DIVIDER2 -->
+		<section class="section-divider textdivider divider2">
+			<div class="container">
+				<h1>INTERACTIVE LEARNING</h1>
+				<hr>
+				<p>Each class is designed to have hands on learning. Lessons have many chances to try out concepts. By using jupyter notebooks, you can quickly make changes and run instructor code. Each day ends in a project or advanced exercises to cement what you have learned.</p>
+			</div><!-- container -->
+		</section><!-- section -->
 
-<hr>
-
-<h1>
-<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h1>
-
-<p>To participate, you'll need to install the software below.  Please install <em>all</em> of the required software, or at least download the installers, before class begins.  If you need any help, just send me an email or find me in person.</p>
-
-<h2>
-<a id="osx" class="anchor" href="#osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h2>
-
-<h3>
+		<!-- ==== SERVICES ==== -->
+		<div class="container" id="install" name="services">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">INSTALLATION INSTRUCTIONS</h2>
+				<hr>
+				<br>
+				<div class="col-lg-offset-2 col-lg-8">
+					<p>To participate, you'll need to install the software below.  Please install <em>all</em> of the required software, or at least download the installers, before class begins.  If you need any help, just send me an email or find me in person.</p>
+				</div><!-- col-lg -->
+			</div><!-- row -->
+			
+			<div class="row">
+				<h3 class="centered">OSX</h3>
+				<hr>
+				<br>
+				<h3>
 <a id="python" class="anchor" href="#python" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python</h3>
 
 <ul>
@@ -92,6 +171,8 @@
 
 <h3>
 <a id="version-control" class="anchor" href="#version-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version Control</h3>
+
+<p>Install Github Desktop here <a href='https://desktop.github.com/'>ghdesktop</a></p>
 
 <p>Install Git for Mac by downloading and running the appropriate installer from the links below.  If you have a recent version of Git from another source (<a href="http://brew.sh/">homebrew</a> for instance), that should be fine.</p>
 
@@ -125,11 +206,13 @@
 <h3>
 <a id="editor" class="anchor" href="#editor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editor</h3>
 
-<p>During the workshop, we'll be using <code>nano</code>, which is pre-installed on your system.  You may wish to try <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or <a href="http://www.sublimetext.com/">Sublime Text</a>.</p>
+<p>During the workshop, we'll be using <code>nano</code>, which is pre-installed on your system.  You may wish to try <a href="http://www.sublimetext.com/">Sublime Text</a> or <a href='https://atom.io/'>Atom</a>.</p>
+</div><!-- row -->
 
-<h2>
-<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h2>
-
+<div class="row">
+				<h2 class="centered">WINDOWS</h2>
+				<hr>
+				<br>
 <h3>
 <a id="python-1" class="anchor" href="#python-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python</h3>
 
@@ -143,8 +226,12 @@
 
 <p>Install Git for Windows by downloading and running <a href="https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20141217/Git-1.9.5-preview20141217.exe">this installer</a>.  This will also install a version of Bash that we can use for this course.  It will lack some of the features found on OS X and Linux implementations of Bash, but you will be able to complete most of the tasks in class.</p>
 
+<p>Install Github Desktop here <a href='https://desktop.github.com/'>ghdesktop</a></p>
+
 <h3>
 <a id="software-carpentry-installer" class="anchor" href="#software-carpentry-installer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Software Carpentry Installer</h3>
+
+
 
 <p><em>Note: This installer requires an active internet connection.</em>
 After installing Python and Git Bash:</p>
@@ -157,22 +244,22 @@ After installing Python and Git Bash:</p>
 <h3>
 <a id="editor-1" class="anchor" href="#editor-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editor</h3>
 
-<p>During the workshop, we'll be using <code>nano</code>, which will be installed by the Software Carpentry Installer above.  You may wish to try <a href="http://notepad-plus-plus.org/">Notepad++</a>, but in order to call it from the command line, you will need to add it to your path.  Ask me for help if this is something you want to try.</p>
+<p>During the workshop, we'll be using <code>nano</code>, which will be installed by the Software Carpentry Installer above. You may wish to try <a href="http://www.sublimetext.com/">Sublime Text</a> or <a href='https://atom.io/'>Atom</a>.</p>
+</div><!-- row -->
+<div class="row">
+				<h2 class="centered">LINUX</h2>
+				<hr>
+				<br>
+				<h3>
+<a id="python" class="anchor" href="#python" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python</h3>
 
-<h2>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h2>
+<ul>
+<li>Download and install <a href="http://continuum.io/downloads">Anaconda</a> for <strong>Python 2.7</strong>.</li>
+<li>In your terminal window type one of the below and follow the instructions: <code>
+bash Anaconda2-4.1.1-Linux-x86_64.sh</code>
+</li>
+</ul>
 
-<h3>
-<a id="python-2" class="anchor" href="#python-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python</h3>
-
-<p>For the sake of consistency, I recommend the all-in-one scientific Python installer <a href="http://continuum.io/downloads">Anaconda</a> for <strong>Python 2.7</strong>. (Installation requires using the shell and if you aren't comfortable doing the installation yourself, outlined below, just download the installer and I'll help you.)
-Download the installer that matches your operating system and save it in your home folder.
-<ol>
-<li>Open a terminal window.</li>
-<li>Type <code>bash Anaconda-</code> and then press tab. The name of the file you just downloaded should appear.</li>
-<li>Press enter. You will follow the text-only prompts. When there is a colon at the bottom of the screen press the down arrow to move down through the text. Type <code>yes</code> and press enter to approve the license. Press enter to approve the default location for the files. Type <code>yes</code> and press enter to prepend Anaconda to your PATH (this makes the Anaconda distribution the default Python).</li>
-</ol>
-</p>
 <h3>
 <a id="bash-1" class="anchor" href="#bash-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bash</h3>
 
@@ -181,57 +268,75 @@ Download the installer that matches your operating system and save it in your ho
 <h3>
 <a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h3>
 
+<p class='warning'><strong>Warning</strong>: Linux does not support github desktop which we will be using for the git portion (about 1.5 hours during session 3). Please ask the help desk if you can have a windows or Mac loaner laptop for the git section of the course<p>
+
 <p>If Git is not already available on your machine you can try to install it via your distribution's package manager (e.g. <code>apt-get</code> or <code>yum</code>).</p>
 
 <h3>
 <a id="editor-2" class="anchor" href="#editor-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editor</h3>
 
-<p>During the workshop, we'll be using <code>nano</code>, which will be installed by the Software Carpentry Installer above.  There are many GUI editor options for Linux, depending on your distribution.  Ask me for suggestions.</p>
+<p>During the workshop, we'll be using <code>nano</code>, which will be installed by the Software Carpentry Installer above.  You may wish to try <a href="http://www.sublimetext.com/">Sublime Text</a> or <a href='https://atom.io/'>Atom</a>.</p>
 
-<h1>
-<a id="syllabus" class="anchor" href="#syllabus" aria-hidden="true"><span class="octicon octicon-link"></span></a>Syllabus</h1>
-
-<h2>
-<a id="classes-1-and-2" class="anchor" href="#classes-1-and-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classes 1 and 2 (Feb 4th and 5th)</h2>
-
-<p>Session 1 introduces the command line interface, including navigating directory structures, manipulating files, editing text files, using filter commands, stringing together filters using pipes and redirection, and possibly making simple bash scripts.</p>
-<p>Session 2 is an introduction to basic programming concepts in python, including data types/structures, conditional expressions, loops, and functions.  </p>
-
-<h2>
-<a id="classes-3-and-4" class="anchor" href="#classes-3-and-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classes 3 and 4 (Feb 11th and 12th)</h2>
-
-<p>Sessions 3 and 4 are a little more flexible.  We will write a few complete programs in python, learn how to use the version control program <code>git</code> to manage work in progress, and try out a few commonly used python libraries for data analysis.  If there's a specific topic you'd like to cover, let me know in an email or in person.</p>
-
-<h1>
-<a id="etherpad" class="anchor" href="#etherpad" aria-hidden="true"><span class="octicon octicon-link"></span></a>Etherpad</h1>
-
-<p>Please share notes and questions in <a href="https://public.etherpad-mozilla.org/p/5JjgoUCJ0X">this online notepad</a> during class.  The helpers and I will keep an eye on it and try to answer important questions as they arise.</p>
-
-<h1>
-<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h1>
-<p>
-<a href='https://etherpad.mozilla.org/iXhVNQ0b1U'>July 2015 online notes</a>
-</p>
+			</div><!-- row -->
+		</div><!-- container -->
+  		
 
 
-<h1>
-<a id="thanks" class="anchor" href="#thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks</h1>
+		<div class="container" id="links" name="contact">
+			<div class="row">
+			<br>
+				<h1 class="centered">LINKS</h1>
+				<hr>
+				<br>
+				<div class="col-lg-offset-2 col-lg-8">
+					<table class='table white-table'>
+						<tr>
+							<td>BASH</td>
+							<td><a href='billy-command_line/01_what_is_the_shell.html'>Bash lessons</a></td>
+						</tr>
+						
+						<tr>
+							<td>LESSONS</td>
+							<td><a href='https://github.com/JaneliaSciComp/jrc_intro_programming'>Github repository with lessons</a></td>
+						</tr>
+						<tr>
+							<td>PROJECTS</td>
+							<td><a href='https://github.com/JaneliaSciComp/jrc_programming_python_practicals'>Github repository with projects</a></td>
+						</tr>
+						<tr>
+							<td>ETHERPAD</td>
+							<td><a href='https://public.etherpad-mozilla.org/p/jrc_python_summer_2016'>Online notepad for questions and lesson notes</a></td>
+						</tr>
+								<td>SIGN UP</td>
+							<td><a href='http://goo.gl/forms/NXEOtimi7p0MwELi2'>Registration Form</a></td>
+						</tr>
+					</table>
 
-<p>Thanks to <a href="http://software-carpentry.org/">Software Carpentry</a> for inspiring the curriculum and providing the Software Carpentry Installer.</p>
-      </section>
+				</div><!-- col -->
+				
+				
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-59957121-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+			</div><!-- row -->
+		
+		</div><!-- container -->
 
+		<div id="footerwrap">
+			<div class="container">
+				<h4><a class='light'  href='https://www.janelia.org/people/charlotte-weaver'>Charlotte Weaver</a></h4>
+				<h4>Janelia Research Campus 19700 Helix Dr. Ashburn VA 20147</h4>
+				<h4>Special thanks to Billy Rowell and Software Carpentry | Template by <a  class='light' href="http://blacktie.co">BlackTie.co</a> - Copyright 2016</h4>
+			</div>
+		</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		
+
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
   </body>
 </html>
