@@ -340,7 +340,7 @@ a:after {
 }
 
 #footerwrap {
-	background: #8ac341;
+	background: #222222;
 	margin-top: 0px;
 	padding-top: 40px;
 	padding-bottom: 20px;
@@ -425,7 +425,7 @@ a:after {
 }
 
 .divider4 {
-	background-image: url('../img/bg/divider4.jpg')
+	background-color: #8ac341
 }
 
 .divider6 {
