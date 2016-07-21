@@ -1,44 +1,82 @@
 # Git and Github
 
-Sign up for github
+## Preperation
+Sign up for a github account. Download Github Desktop, install it, and set it up with the account you just signed up for at github.
 
-Open github desktop
-
-Set up github desktop
-
+## Adding a project
+Let us add a project to version control. This tells git that we will want to track some of the files under this local directory.
 
 Click on + -> Add
-	-choose name and path (root directory)
+	- choose name and path (root directory)
+	- Name: Pirate, Path ~/Documents (you can let it be anything, but please remember the path)
 
-Now let's make some files
-	cd [path+directory]
-	touch hello.py
+## Creating files to track
+Version control only works if you have files to track, so let's make some files 
+
+	cd <path>/Pirate
+	nano pirate.py
+	
+	# In pirate.py
+	import random
+	print "arr, matey"
+
+## Status
+The status tells you what changes you've made that are not in git yet
 
 Look at the status
 	Notice that clicking on a file shows you something
 
+## Your first Commit
+When you commit, you are telling git to keep track of all of the changes you have made. You create a checkpoint that you can go back to at anytype, and view differences from.
+
 Commit changes
-	Type a detailed commit message in summary
-	(Can add a longer description if you want)
+	Type a detailed commit message in summary "Inital load of pirate treasue."
+	(You can add a longer description if you want)
 	Click Commit to master button
+	
+## History	
+This history let you see a history of all the commits you have made over time.
 
 Let's check the history now
 	Click on History at the top
 
+## The git process
+What will typically happen is that you make a few small changes, and then commit as you go. Make sure you put a detailed commit message for each commit so that you know what you did when (and why). This makes it easy to figure out where a bug came from or what your process was.
+
 We'll make some more changes
-	Delete a line
-	commit
-	check log
-	Change a line
-	commit 
-	check log
+	# Delete a line
+	We are not using the random module, delete it
+	Commit "Removed unessary random module"
+	Check log
+	
+	#Change a line
+	Capitilize 'Arr, matey'
+	Commit "Correct capitalization"
+	Check log
+	
+	# Add some lines
+	
+	for i in range(100):
+		print "Walk " + str(i) + " paces left"
+		
+	Commit "Walk paces 1-100"
+	Check log
+
+## Undoing a commit
+Sometimes you make a commit and shortly afterwards realize something went wrong, you spelled something wrong, the code doesn't do exactly what you wanted, etc. We can undo our most recent commit
 
 Undo a commit
-	click undo
-	make a better commit message and commit again
+	Click undo
+	Make a better commit message and commit again "Walk paces 0-99"
+
+## Adding a file
+We can track more than one file at a time (otherwise version control would be pretty useless)
 
 Add a file
-	add a new text file
+	Add a new text file 'treasure.txt'
+		Rubies
+		Diamonds
+		
 	update our program to read file and print out data
 	separate this into two commits
 
