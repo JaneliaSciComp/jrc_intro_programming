@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Learn Git With GitHub Desktop</title>
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Eczar:400,800' rel='stylesheet' type='text/css'>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <div class='background'>
+        <div class="container">
+         <div class='row whitebg'>
+          <div class=''>
+            <h1>Learning Git with GitHub Desktop</h1>
+            <p class='description'>
+              If you have a programming project that you are working on, chances are your workflow would be improved by adding version control. Version control makes it easier for you to back up your work, keep a history of changes you have made, work collaboratively, and share your code. <a target="_blank" href='https://git-scm.com/'>Git</a> has emerged as by far the most popular version control option, so that is what we will learn. We will be using GitHub Desktop as it makes it easy to get started. 
+            </p>
+
+            <h2>Preparation</h2>
+            </div>
+            <div class='span3'>
+              <img width='300px' src='assets/img/codercat.jpg'>
+            </div>
+            <div class='span9'>
+            <p class='description'>
+            To follow this lesson you will need to download GitHub Desktop and sign up with an account at github.com.
+            </p>
+            <p>
+              <ol>
+                <li><a target="_blank" href='https://github.com/join'>Sign up</a> for a GitHub account.</li>
+                <li><a target="_blank" href='https://desktop.github.com/'>Download</a> GitHub Desktop.</li> 
+                <li>Install GitHub Desktop.</li>
+                <li>Set it up with the account you just signed up for at GitHub.</li>
+              </ol>
+            </p>
+            </div>
+            <div class='clearfix'></div>
+            <div class=''>
+            <h2>Your first repository</h2>
+            <h3> Adding a project</h3>
+            <p class='description'>
+              Let's add a project to version control. This tells git that we will want to track some of the files under this local directory.
+            </p>
+            <p>
+              
+              <ol>
+                <li>Click on <span class='command'>+</span> -> <span class='command'>Create</span></li>
+                <li>Choose name and path (root directory).</li>
+                <li>Name: Pirate, Path ~/Documents (you can let it be anything, but please remember the path).</li>
+                <li>Click <span class='command'>Create Repository</span>.</li>
+              </ol>
+
+            </p>
+            <h3> Creating files to track</h3>
+            <p class='description'>
+              Version control only works if you have files to track, so let's make some files. 
+              </p>
+              <p>
+              <pre>
+# In a bash terminal
+cd &lt;path&gt;/Pirate
+nano pirate.py
+
+# In pirate.py
+import random
+print "arr, matey"
+
+# Save the file</pre>
+            </p>
+            <h3> Status</h3>
+            <p  class='description'>
+              The status tells you what changes you've made that are not in git yet.
+            </p>
+            <p>
+              Look at the status by clicking on the tab that should say <span class='command'>1 Uncommitted Change</span>.
+              Notice that clicking on a file shows you the changes from that file.
+            </p>
+            <h3> Your first commit</h3>
+            <p class='description'>
+              When you commit, you are telling git to keep track of all of the changes you have made. You create a checkpoint that you can go back to at anytime, and view differences.
+            </p>
+            <p>
+              Commit changes:
+              <ol>
+                <li>Type a detailed commit message in the <span class='command'>Summary</span> text box "Initial load of pirate treasure." (You can add a longer description if you want).</li>
+                <li>Click <span class='command'>Commit to master</span> button.</li>
+              </ol>
+            </p>
+            <h3> History  </h3>
+            <p class='description'>
+              This history let you see all the commits you have made over time. Let's check the history now.
+            </p>
+            <p>
+              Click on <span class='command'>History</span> at the top.
+              It just has a single commit now, but soon it will be more populated.
+            </p>
+            <h3>The git process</h3>
+            <p class='description'>
+              What will typically happen is that you make a few small changes, and then commit as you go. Make sure you put a detailed commit message for each commit so that you know what you did when (and why). This makes it easy to figure out where a bug came from or what your thought process was.
+            </p>
+            <p>
+              We'll make some more changes:
+              <pre>
+# Delete a line
+We are not using the random module. Delete it from the file.
+Commit "Removed unnecessary random module"
+Check History
+
+#Change a line
+Capitalize 'Arr, matey'
+Commit "Correct capitalization"
+Check History
+
+# Add some lines
+for i in range(100):
+  print str(i) + " bottles of rum"
+Commit "Walk paces 1-100"
+Check History</pre>
+
+            </p>
+            <h3> Undoing a commit</h3>
+            <p class='description'>
+              Sometimes you make a commit and shortly afterwards realize something went wrong, you spelled something wrong, the code doesn't do exactly what you wanted, etc. We can undo our most recent commit.
+            </p>
+            <p>
+              Undo a commit:
+              <ol>
+                <li>Click <span class='command'>undo</span> at the bottom of the <span class='command'>Uncommitted Changes</span> tab.</li>
+                <li>Make a better commit message and commit again "Walk paces 0-99".</li>
+              </ol>
+
+            </p>
+            <h3> Adding a file</h3>
+            <p class='description'>
+              We can track more than one file at a time (otherwise version control would be pretty useless).
+            </p>
+            <p>
+              Add a file:
+              <pre>
+# Add a new text file 'treasure.txt'
+  Rubies
+  Diamonds
+  Crown Jewels
+  Parrot
+
+# Update pirate.py to read file and print out data
+with open('treasure.txt') as fh:
+  for line in fh:
+    print line</pre>
+              <ol>
+                <li>Separate this into two commits by first unchecking pirate.py (only treasure.txt should be checked) and commit with message "Adding my treasure".</li>
+                <li>Then check pirate.py and commit with message "Print out treasure contents".</li>
+              </ol>
+
+            </p>
+            <h3> Ignoring files</h3>
+            <p class='description'>
+              We can tell git that we don't want to track some files. This is useful for output, configuration files, files with sensitive data (like passwords), or compiled files .
+            </p>
+            <p>
+              <pre>
+# Have pirate.py write a file
+with open('map.txt', 'w') as fh:
+  for i in range(10):
+    fh.write("Walk " + str(i) + " paces left.")
+# Run our program
+python pirate.py</pre>
+              </p>
+              <p>
+              Now we want to commit, but we don't want to commit map.txt (now or ever).
+              <ol>  
+                <li> Right click map.txt and pick <span class='command'>ignore</span>.</li>
+                <li>Notice we have a new file to add. The .gitignore file is a special file that tells you what types of files to ignore. </li>
+                <li><b>Aside:</b> When you start a new project it is nice to search for something like 'python git ignore' in google and copy the resulting file into your own file.</li>
+                <li>Commit changes with message "Create a simple treasure map".</li>
+                <li>Look at .gitignore file it created.</li>
+
+              </ol>
+            </p>
+            <h3> Creating a remote repository</h3>
+            <p class='description'>
+              Right now all your files are on your computer, if you want to send them to the cloud so that you can share your code and have another backup of all your changes you create a remote. GitHub Desktop publishes your code to GitHub (though you can configure a different remote if you want).
+            </p>
+            <p>
+              <ol>
+                <li>Click on the <span class='command'>Publish</span> button in the upper right.</li>
+                <li>Write a description for your repo and then click <span class='command'>Publish repository</span>.</li>
+                <li>Go to <a target="_blank" href='http://github.com'>GitHub</a> and check out your new repo.</li>
+              </ol>
+            </p>
+            <h3> Adding a Readme</h3>
+            <p class='description'>
+              Once you have a repo publicly you should add a readme to help people who find your project understand what it is for and begin using it.
+            </p>
+            <p>
+              <ol>
+                <li>Create a new file README.md. </li>
+                <li>Write something that helps users understand how to use your repository. GitHub uses markdown to display formatting. <a target="_blank" href='https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet'>Markdown Cheatsheet</a>.</li>
+                <li>Commit your new file with message"Added readme".</li>
+              </ol>
+
+            </p>
+            <h3> Pushing changes to remote</h3>
+            <p class='description'>
+              You have committed your changes locally, but they are not on the remote repository (GitHub) yet. To get you changes to GitHub, you need to push your changes.
+            </p>
+            <p>
+              <ol>
+                <li>Click the <span class='command'>sync</span> button to push your changes to your remote repo.</li>
+                <li>Check <a target="_blank" href='http://github.com'>GitHub</a> see how it displays your readme to visitors.</li>
+              </ol>
+            </p>
+            <h3> Pulling changes from remote</h3>
+            <p class='description'>
+              You can make changes directly to the remote repo, or someone else can make their own changes and push them to remote. You will need to pull those changes back to your local repo.
+            </p>
+            <p>
+              <ol>
+                <li>First make sure you have no uncommitted changes locally.</li>
+                <li>Make a change to README.md on GitHub by clicking on <span class='command'>README.md</span> and then clicking on the <span class='command'>edit (pencil)</span> button.</li>
+                <li><b>Aside</b>: It is fine to make small changes to readmes and text files directly on GitHub, but changes to code should be done in an environment where you can test your changes.</li>
+                <li>Commit changes by clicking the green <span class='command'>commit</span> button on GitHub.</li>
+                <li>Now click the <span class='command'>sync</span> button in GitHub Desktop to bring those changes back to your local repo.</li>
+                <li>Look at the <span class='command'>History</span></li>
+              </ol>
+            </p>
+            <h3> Resetting a commit </h3>
+            <p class='description'>
+              If you have ever accidently created a commit and can't undo, you can revert your commit.
+            </p>
+            <p>
+              <pre>
+Add a bash command to your pirate.by file 
+echo "Polly wants a cracker"</pre>  
+              <ol>
+                <li>Commit your changes "parrot food" and <span class='command'>sync</span> with GitHub.</li>
+                <li>In <span class='command'>History</span>, click on the offending commit.</li>
+                <li>Click on the <span class='command'>settings</span> icon and select <span class='command'>Revert this Commit</span>.</li>
+                <li>To make sure you changes get to the remote repo, click on the <span class='command'>sync</span> button.
+              </ol>
+
+            </p>
+            <h3> Branching</h3>
+            <p class='description'>
+              Branching allows you to make changes to your code while maintaining a stable core. A good model to follow is to make a branch for every new feature or bug fix you want to make and then to merge it back into master when you are done.
+            </p>
+            <p>
+              <ol>
+                <li>Click the <span class='command'>+branch</span> icon button.</li>
+                <li>Put 'gold' as the name and click the <span class='command'>Create Branch</span> button.</li>
+                <li>You have just created a copy of all your code, but changes here won't affect the code in master (until we merge it, next section).</li>
+                <li>To switch between branches use the <span class='command'>dropdown</span> next to the branch button.</li>
+                <li>Modify treasure.txt and add the following treasures:</li>
+                  <pre>
+Gold doubloons
+Goldfish
+Gold nuggets</pre>
+                    <li>Commit your changes with message "Added gold things to my treasures".</li>
+                    <li>Switch to master branch (use the <span class='command'>dropdown menu</span>).</li>
+                    <li>Look at treasure.txt and notice it doesn't have the gold things in it.</li>
+                  </ol>
+
+                </p>
+                <h3> Merging</h3>
+                <p class='description'>
+                  Once you have finished what you were working on in your branch, you can merge your code back into master.
+                </p>
+                <p>
+                  <ol>
+                    <li>Make sure you are on branch master.</li>
+                    <li>Click on <span class='command'>Compare</span> and select gold.</li>
+                    <li>Click <span class='command'>Update from gold</span>.</li>
+                    <li>Look at treasure.txt. Notice it has all the gold treasures.</li>
+                    <li>To get back to the normal view click <span class='command'>View Branch</span></li>
+                  </ol>
+
+
+                </p>
+                <h3> Merge conflicts</h3>
+                <p class='description'>
+                  Sometimes someone git cannot figure out how to merge a file because the same line has been changed in both branches. This is called a merge conflict and you will have to tell git which lines you want to keep.
+                </p>
+                <p>
+                  We are going to create a merge conflict by changing the same line in both branches. Git will require you to pick what you want to keep.
+                  <ol>
+                    <li>In branch master.</li>
+                    <li>Change the line 'Goldfish' in treasure.txt to 'Golden retriever'.</li>
+                    <li>Commit this file with message "Dogs > fish".</li>
+                    <li>Switch to branch gold.</li>
+                    <li>Change the line 'Goldfish' in treasure.txt to 'Golden marmoset'.</li>
+                    <li>Commit this file with message "Monkeys are better for pirates".</li>
+                    <li>Switch back to master.</li>
+                    <li>Click <span class='command'>Compare</span> and select gold.</li>
+                    <li>Click <span class='command'>Update from gold</span>.</li>
+                    <li><b>Uh-oh!</b> there are conflicts (as expected).</li>
+                    <li>Choose <span class='command'>Open with External Editor</span> button.</li>
+                    <li>Delete all lines besides the ones you want to keep.</li>
+                    <li>Save the file.</li>
+                    <li>Commit the changes in branch master.</li>
+                  </ol>
+                </p>
+                <h2> Other ways to get repositories </h2>
+                <h3> Cloning</h3>
+                <p class='description'>
+                  You can download someone else's git repo if they have made it public. This is called cloning. Be aware that you will only be able to make changes locally to a cloned repo unless the owner gives you permission. If you want to be able to push changes, you will learn that next section with forking.
+                </p>
+                <p> 
+                  Your clone list will be prepopulated with your own repos and those from organizations you belong to.
+                  To get one from somewhere else on GitHub:
+                  <ol>
+                    <li>Find an interesting repo at <a target="_blank" href='http://github.com/explore'</a>github.com</a>'s explore section. </li>
+                    <li>Click on the green <span class='command'>Clone or Download</span> button.</li>
+                    <li>Select <span class='command'>Open in Desktop</span>.</li>
+                  </ol>
+
+                </p>
+                <h3> Forking</h3>
+                <p class='description'>
+                  You can also make a copy of a repo to your own remote section; this is called forking a repository. Only do this if you plan to make changes to the code and push your changes remotely. 
+                </p>
+                <p>
+                  <ol>
+                    <li>On GitHub click the <span class='command'>fork</span> link.</li>
+                    <li>Now you can clone the fork from your location onto your desktop.</li>
+                  </ol>
+
+                </p>
+                <h3> Adding an existing folder/repo </h3>
+                <p class='description'>
+                  If you have a project that you have already started and want to add version control, or you have cloned a repo through other means besides GitHub Desktop you can add it. 
+                </p>
+                <p>
+                  <ol>
+                    <li>Click the <span class='command'>+</span> -> <span class='command'>Add</span> and select the repo or folder you want to add.</li>
+                    <li>Make your first commit and that's it!</li>
+                  </ol>
+
+                </p>
+                <h3> Command line git</h3>
+                <p class='description'>
+                  We have been using a GUI for performing all of our git actions, but you can do everything from the command line too. Using git from the command line give you access to more commands and options than are available with the desktop version, but with great power comes great complexity. 
+                </p>
+                <p>If you would like to learn command line git I recommend starting with <a target="_blank" href='https://try.github.io/'>Try Git</a>.</p>
+             
+              <footer>
+              <a target="_blank" href='https://www.janelia.org/people/charlotte-weaver'>Charlotte Weaver</a>  © 2016<br />
+              Janelia Research Campus 19700 Helix Dr. Ashburn VA 20147
+              </footer>
+               </div>
+            </div>
+
+          </div><!-- /.container -->
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="assets/js/bootstrap.min.js"></script>
+      </body>
+      </html>

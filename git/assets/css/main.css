@@ -1,0 +1,77 @@
+h1 {
+	background-color: #058d96;
+	padding: 10px 15px;
+	color: white;
+	font-family: 'Eczar', serif;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+h2 {
+	background-color: #00a450;
+	color: white;
+	padding: 6px 15px;
+	font-family: 'Eczar', serif;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+h3 {
+	background-color: #52b448;
+	color: white;
+	padding: 3px 15px;
+	font-family: 'Eczar', serif;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.background {
+	background-color: #444;
+}
+
+.whitebg {
+	background: white;
+}
+p, ol{
+	font-size: 1.0005rem;
+	padding-left: 20px;
+	padding-right: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+	
+pre {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+p.description {
+	font-size: 1.075rem;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #444;
+	background-color:#fafafa;
+	border: 1px dashed #444;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+footer {
+	min-height: 50px;
+	background-color: #8ac341;
+	color: #444;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-size: 1.0005rem;
+	font-style: italic;
+}
+span.command {
+	font-weight: bold;
+	color: #058d96;
+}
+
+[class*="span"] {
+	margin-left: 0px;
+	margin-left: 0px;
+}
